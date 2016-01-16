@@ -1,6 +1,6 @@
 Mac Debugger
 ---
-Mac Debugger was created with the focus on giving the programmer a powerful framework to programatically create scripts to debug programs on Mac OSX not found in the lackluster selection for the platform.
+Mac Debugger was created with the focus on giving the programmer a powerful framework to programatically create scripts to debug programs on Mac OSX not found in other products for the platform.
 
 The core of macdbg, written in C, is kept as minimal as possible to provide enough basic interaction between the kernel and userland to create powerful features. Higher level functionality is left to the Python implementation such as stack tracing, dissasembly, watchpoints, thread state, and more. A wrapper class is provided for the programmer to create a scripting program.  
 
