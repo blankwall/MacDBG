@@ -1,10 +1,7 @@
 #include "breakpoint.h"
 #include "memory.h"
 
-/*
- * Add a breakpoint, anything <= MAX_BREAKS is reserved as an index.
- * We justify this as we plan on MAX_BREAKS to be between 100 to 10,000.
- */
+
 EXPORT
 int add_breakpoint(mach_port_t task, vm_address_t patch_addr, int cont, callback handler) {
     kern_return_t kret;
