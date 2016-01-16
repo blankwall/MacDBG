@@ -17,7 +17,7 @@ from subprocess import Popen, PIPE
 def base_addr(dbg, name):
 
     if dbg.base_address == 0x100000000:
-        print dbg.color_red("BASE ADDRESS == LOAD ADDRESS :( -- PID - " + str(dbg.pid) + " -  NAME " + name)
+        print dbg.color_red("BASE ADDRESS == LOAD ADDRESS :( -- PID - " + str(dbg.pid)), dbg.color_green(" -  NAME " + name)
 
     dbg.detach()
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
         try:
             pid = x[1]
             name = x[10]
-            name = name[name.find("/"):]
+            name = name[name.find("/")+1:]
             tmp.attach(int(pid), 1)
         except:
             continue

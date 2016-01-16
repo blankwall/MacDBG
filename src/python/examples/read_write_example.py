@@ -29,7 +29,7 @@ def debugger(dbg, kill =0):
     print "WRITING AAAA TO: " + dbg.color_green(hex(allocation3))
     
     cola = dbg.inject_code("HELLO")
-    print "INJECTED HELO" + " @: " + dbg.color_green(hex(cola))
+    print "INJECTED HELLO" + " @: " + dbg.color_green(hex(cola))
 
     # dbg.write_memory(allocation, 0x41, 1)
     print "HEX DUMPING WRITTEN LOCATIONS"

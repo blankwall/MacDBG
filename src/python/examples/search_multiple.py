@@ -20,7 +20,7 @@ def search_mem(dbg, search):
 
     if len(search_results) > 0:
         for i in search_results:
-            print dbg.color_green(hex(i)) + " --> " + dbg.color_pink(dbg.read_memory(i, 20))
+            print dbg.color_green(hex(i)) + " --> " + dbg.color_pink(dbg.read_memory(i, 40))
         dbg.detach()
         return 1
     else:

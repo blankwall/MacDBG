@@ -57,7 +57,7 @@ def generic_callback_9(info_struct):
     exit(1)
 
 
-def debugger(dbg, infoPid, task, kill = 0):
+def debugger(dbg, kill = 0):
     try:
         prog_base_addr = dbg.base_address
         print "[+] Base address: " + hex(prog_base_addr)
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     pid = dbg.pid
     print "[+] Attached to task # %s\n" % str(dbg.task)
 
-    debugger(dbg, pid, dbg.task, 1)
+    debugger(dbg, 1)
 
     dbg.terminate_()
 

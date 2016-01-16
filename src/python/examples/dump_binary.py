@@ -26,7 +26,7 @@ def debugger(dbg, kill = 0):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print "USAGE [pid]"
-        return
+        exit()
 
     pid = int(sys.argv[1])
     dbg = MacDbg()
