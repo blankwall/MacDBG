@@ -4,7 +4,7 @@ Mac Debugger was created with the focus on giving the programmer a powerful fram
 
 The core of macdbg, written in C, is kept as minimal as possible to provide enough basic interaction between the kernel and userland to create powerful features. Higher level functionality is left to the Python implementation such as stack tracing, dissasembly, watchpoints, thread state, and more. A wrapper class is provided for the programmer to create a scripting program.  
 
-NOTE: Some examples are broken or not working because we have not finished symbol support expect it sometime next week!
+NOTE: This is an Alpha implementation more showing concepts and ideas but not fully refined. Expect the Beta version in the coming months with more refined variable naming cleaner code and more useable examples. Thanks for all the interest suggestions comments and help welcome!
 
 ## Getting Started
 ---
