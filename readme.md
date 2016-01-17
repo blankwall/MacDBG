@@ -16,7 +16,7 @@ Navigate to the MacDBG directory, then `cd src` and `make`. The shared library l
   
 ## Plugins  
 ---
-- Captsone -- optional
+- [Capstone disassembler](http://www.capstone-engine.org) -- optional
   
 ## Usage  
 ---
